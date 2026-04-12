@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>YogBerry — Полезные йогурты с ягодами</title>
+  <!-- Подключаем шрифт Inter (современный, как Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (иконки) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Основной CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Кнопка переключения темы -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+    <i class="fas fa-moon"></i>
+    <span>Тёмная тема</span>
+  </button>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo glass">🍓 YogBerry</a>
+      <nav class="nav">
+        <a href="#home" class="nav__link">Главная</a>
+        <a href="#products" class="nav__link">Продукты</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero секция -->
+    <section id="home" class="hero">
+      <div class="container hero__container">
+        <div class="hero__content glass fade-in">
+          <h1 class="hero__title">Свежие йогурты со вкусом ягод <br>и пользой для здоровья</h1>
+          <p class="hero__subtitle">Натуральные ингредиенты, живая микрофлора и невероятный вкус каждый день.</p>
+          <a href="#products" class="btn btn--primary">Выбрать вкус <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero__image fade-in">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Ccircle cx='200' cy='180' r='120' fill='%23ffb7c5' opacity='0.4'/%3E%3Ccircle cx='200' cy='180' r='90' fill='%23f8e3e7'/%3E%3Crect x='160' y='220' width='80' height='100' rx='20' fill='%23ffd0b0'/%3E%3Ccircle cx='170' cy='170' r='12' fill='%23d44'/%3E%3Ccircle cx='230' cy='170' r='12' fill='%23d44'/%3E%3Cpath d='M150 150 L180 120 L220 120 L250 150' fill='%23a3d0c0' opacity='0.8'/%3E%3C/svg%3E" alt="Йогурт с ягодами" style="max-width:100%; height:auto;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Продукты -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2 class="section-title fade-in">Наши вкусы</h2>
+        <div class="products__grid">
+          <!-- Карточка 1 -->
+          <div class="product-card glass fade-in">
+            <div class="product-card__icon">
+              <i class="fas fa-apple-alt"></i>
+            </div>
+            <h3>Клубника</h3>
+            <p>Нежный йогурт с кусочками спелой клубники и семенами чиа.</p>
+            <span class="product-card__price">от 120 ₽</span>
+            <button class="btn btn--card">Заказать</button>
+          </div>
+          <!-- Карточка 2 -->
+          <div class="product-card glass fade-in">
+            <div class="product-card__icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Черника</h3>
+            <p>Греческий йогурт с дикой черникой и каплей мёда.</p>
+            <span class="product-card__price">от 135 ₽</span>
+            <button class="btn btn--card">Заказать</button>
+          </div>
+          <!-- Карточка 3 -->
+          <div class="product-card glass fade-in">
+            <div class="product-card__icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Малина</h3>
+            <p>Малиновое наслаждение с хрустящей гранолой и йогуртом.</p>
+            <span class="product-card__price">от 145 ₽</span>
+            <button class="btn btn--card">Заказать</button>
+          </div>
+          <!-- Карточка 4 -->
+          <div class="product-card glass fade-in">
+            <div class="product-card__icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <h3>Манго</h3>
+            <p>Экзотический манго и маракуйя на основе кокосового йогурта.</p>
+            <span class="product-card__price">от 150 ₽</span>
+            <button class="btn btn--card">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты и адрес -->
+    <section id="contacts" class="contacts">
+      <div class="container contacts__container">
+        <div class="contacts__info glass fade-in">
+          <h2 class="section-title section-title--left">Где нас найти</h2>
+          <div class="contacts__item">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:19556634">19556634</a>
+          </div>
+          <div class="contacts__item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Улица Пушкино, Дом Калатушкино</span>
+          </div>
+          <div class="contacts__item">
+            <i class="fas fa-clock"></i>
+            <span>Ежедневно с 9:00 до 21:00</span>
+          </div>
+          <a href="#" class="btn btn--primary contacts__btn">Позвонить сейчас</a>
+        </div>
+        <div class="contacts__map glass fade-in">
+          <!-- Заглушка карты -->
+          <div style="background: #f0e1e4; width:100%; height:100%; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: #a5677a;">
+            <i class="fas fa-map" style="font-size: 3rem; opacity: 0.6;"></i>
+            <span style="margin-left: 10px;">ул. Пушкино, д. Калатушкино</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer glass">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <a href="#" class="logo logo--footer">🍓 YogBerry</a>
+        <p>Свежие йогурты с любовью</p>
+      </div>
+      <div class="footer__col">
+        <h4>Контакты</h4>
+        <p><i class="fas fa-phone"></i> <a href="tel:19556634">19556634</a></p>
+        <p><i class="fas fa-location-dot"></i> Ул. Пушкино, Дом Калатушкино</p>
+      </div>
+      <div class="footer__col">
+        <h4>Мы в соцсетях</h4>
+        <div class="social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 YogBerry. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Скрипт для переключения темы и анимации при скролле -->
+  <script>
+    (function(){
+      "use strict";
+
+      // --- Переключение темы ---
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+      const icon = themeToggle.querySelector('i');
+      const textSpan = themeToggle.querySelector('span');
+
+      // Проверяем сохранённую тему
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        textSpan.textContent = 'Светлая тема';
+      }
+
+      themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        const isDark = body.classList.contains('dark-theme');
+        
+        if (isDark) {
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+          textSpan.textContent = 'Светлая тема';
+          localStorage.setItem('theme', 'dark');
+        } else {
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+          textSpan.textContent = 'Тёмная тема';
+          localStorage.setItem('theme', 'light');
+        }
+      });
+
+      // --- Анимация появления при скролле (Intersection Observer) ---
+      const fadeElements = document.querySelectorAll('.fade-in');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            // Можно прекратить наблюдение после появления (не обязательно)
+            // observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -30px 0px'
+      });
+
+      fadeElements.forEach(el => observer.observe(el));
+
+      // Для элементов, которые уже видны при загрузке — сразу покажем
+      // (но observer сам сработает)
+      // Плавный скролл для якорных ссылок
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === "#" || href === "") return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Инициализация: если элементы уже видны — добавляем visible вручную (на случай)
+      window.addEventListener('load', () => {
+        fadeElements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100 && rect.bottom > 0) {
+            el.classList.add('visible');
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
